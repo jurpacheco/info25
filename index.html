@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendário — Turma Info 25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="topo">
+      <p class="eyebrow">✦ IFSC — Câmpus Garopaba ✦</p>
+      <h1 class="titulo-turma" id="tituloTurma">TURMA INFO 25</h1>
+      <p class="subtitulo">calendário de provas &amp; horário</p>
+    </header>
+
+    <nav class="abas" id="abas" aria-label="Selecionar mês"></nav>
+
+    <main id="conteudo" class="conteudo"></main>
+
+    <footer class="rodape">
+      <p>feito pela liderança de turma · atualizado direto pelo <a href="https://github.com/jurpacheco" target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+  </div>
+
+  <!-- Modal de detalhes da prova -->
+  <div class="overlay" id="overlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+      <button class="fechar" id="fechar" aria-label="Fechar">✕</button>
+      <p class="modal-materia" id="modalMateria"></p>
+      <h2 class="modal-titulo" id="modalTitulo"></h2>
+      <p class="modal-data" id="modalData"></p>
+      <div class="modal-contagem" id="modalContagem"></div>
+      <h3 class="modal-subhead">Conteúdo</h3>
+      <ul class="modal-lista" id="modalLista"></ul>
+      <a class="modal-anexo" id="modalAnexo" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

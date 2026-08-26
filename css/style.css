@@ -1,0 +1,411 @@
+/* ============================================================
+   TOKENS DE DESIGN
+   ============================================================ */
+:root {
+  --teal-bg:     #8CC2B5;
+  --teal-deep:   #5F9C8F;
+  --teal-line:   #79B0A4;
+  --cream:       #FAF5EA;
+  --tan:         #E7DECA;
+  --ink:         #26332E;
+  --ink-soft:    #5C6A63;
+  --white:       #FFFDF8;
+  --shadow:      0 10px 30px rgba(38, 51, 46, 0.18);
+
+  --font-display: 'Roboto Slab', serif;
+  --font-script:  'Baloo 2', cursive;
+  --font-body:    'Quicksand', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--teal-bg);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(255,255,255,0.10) 0, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(0,0,0,0.06) 0, transparent 45%);
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+a { color: inherit; }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 44px 20px 60px;
+}
+
+.topo {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  font-family: var(--font-script);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+
+.titulo-turma {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  text-shadow: 0 3px 0 rgba(38,51,46,0.15);
+}
+
+.subtitulo {
+  font-family: var(--font-script);
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--cream);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 18px;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+/* Abas de navegação (meses) */
+.abas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.aba-btn {
+  font-family: var(--font-script);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: rgba(250, 245, 234, 0.55);
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.55);
+  border-radius: 999px;
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.aba-btn:hover {
+  background: rgba(250, 245, 234, 0.8);
+}
+
+.aba-btn.ativa {
+  background: var(--cream);
+  color: var(--teal-deep);
+  border-color: var(--cream);
+  box-shadow: var(--shadow);
+}
+
+/* Card de conteúdo principal */
+.conteudo {
+  background: var(--cream);
+  border-radius: 26px;
+  padding: clamp(16px, 4vw, 34px);
+  box-shadow: var(--shadow);
+}
+
+/* ============================================================
+   CALENDÁRIO MENSAL
+   ============================================================ */
+.mes-titulo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal-deep);
+  text-align: center;
+  margin: 4px 0 22px;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+}
+
+.grade-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px var(--teal-line) inset;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 90px repeat(5, minmax(120px, 1fr));
+  min-width: 620px;
+}
+
+.cabecalho-dia {
+  background: var(--teal-deep);
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 6px;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.cabecalho-dia.canto { background: var(--teal-deep); }
+
+.rotulo-semana {
+  background: var(--tan);
+  color: var(--ink);
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 6px;
+  border-bottom: 1px solid rgba(38,51,46,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.rotulo-semana .num { font-size: 1.05rem; }
+.rotulo-semana .faixa { font-size: 0.8rem; font-weight: 600; color: var(--ink-soft); }
+
+.celula-dia {
+  background: var(--white);
+  border-bottom: 1px solid rgba(38,51,46,0.08);
+  border-left: 1px solid rgba(38,51,46,0.08);
+  min-height: 74px;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.celula-dia.tem-prova {
+  cursor: pointer;
+  background: var(--cream);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.celula-dia.tem-prova:hover,
+.celula-dia.tem-prova:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(38,51,46,0.18);
+  outline: none;
+  z-index: 2;
+}
+
+.prova-materia {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--ink);
+  position: relative;
+  z-index: 1;
+}
+
+.prova-assunto {
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  position: relative;
+  z-index: 1;
+}
+
+/* número decorativo enorme = dias restantes até a prova */
+.prova-contagem {
+  position: absolute;
+  right: 6px;
+  bottom: -6px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.6rem;
+  color: var(--teal-line);
+  opacity: 0.35;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ============================================================
+   HORÁRIO SEMANAL
+   ============================================================ */
+.horario-titulo-wrap { text-align: center; margin-bottom: 8px; }
+
+.horario-script {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--teal-deep);
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+}
+
+.grade-horario {
+  display: grid;
+  grid-template-columns: 120px repeat(5, minmax(110px, 1fr));
+  min-width: 620px;
+}
+
+.celula-horario {
+  background: var(--white);
+  border-bottom: 1px solid rgba(38,51,46,0.08);
+  border-left: 1px solid rgba(38,51,46,0.08);
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px;
+  font-family: var(--font-script);
+  font-weight: 600;
+  color: var(--teal-deep);
+  font-size: 0.9rem;
+}
+
+.rotulo-horario {
+  background: var(--tan);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(38,51,46,0.08);
+  padding: 6px;
+}
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(38, 51, 46, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.overlay.aberto { display: flex; }
+
+.modal {
+  background: var(--cream);
+  border-radius: 22px;
+  max-width: 480px;
+  width: 100%;
+  max-height: 86vh;
+  overflow-y: auto;
+  padding: 30px 28px 26px;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.fechar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--teal-deep);
+  color: var(--white);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.modal-materia {
+  font-family: var(--font-script);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--teal-deep);
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.modal-titulo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.modal-data {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.modal-contagem {
+  display: inline-block;
+  background: var(--teal-deep);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.modal-subhead {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--teal-deep);
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.modal-lista {
+  margin: 0 0 18px;
+  padding-left: 20px;
+  color: var(--ink);
+}
+
+.modal-lista li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.modal-anexo {
+  display: none;
+  background: var(--tan);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.modal-anexo.visivel { display: block; }
+
+/* ============================================================
+   RODAPÉ
+   ============================================================ */
+.rodape {
+  text-align: center;
+  margin-top: 24px;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.82rem;
+}
+
+.rodape a {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (max-width: 520px) {
+  .grade, .grade-horario { min-width: 560px; }
+}
