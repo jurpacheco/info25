@@ -57,13 +57,16 @@ const DADOS = {
           provas: {
             qui: {
               materia: "Português",
-              titulo: "Prova de Português",
-              assunto: "Morfologia",
+              titulo: "Prova de Língua Portuguesa",
+              assunto: "Morfologia e Romantismo",
               data: "2026-08-20",
               conteudo: [
-                "Classes de palavras: substantivo, adjetivo, verbo, advérbio",
-                "Flexões de gênero, número e grau",
-                "Processos de formação de palavras (derivação e composição)"
+                "Morfologia do português - estrutura da palavra",
+                "Romantismo brasileiro: poesia",
+                "Estudos gramaticais: morfologia do português",
+                "Estrutura das palavras: radical, vogal temática, tema, desinências, afixos",
+                "Prefixos, radicais e sufixos (Prefixos, Radicais, Sufixos)",
+                "Atividade de morfologia - estrutura da palavra"
               ],
               anexo: null
             }
@@ -81,21 +84,85 @@ const DADOS = {
           provas: {
             qua: {
               materia: "PES",
-              titulo: "Prova de PES",
-              assunto: "Desde linguagem Python até Funções",
+              titulo: "Prova de Python",
+              assunto: "Módulo Básico de Python",
               data: "2026-09-02",
               conteudo: [
-                "Introdução à linguagem Python: variáveis e tipos de dados",
-                "Estruturas condicionais (if / elif / else)",
-                "Estruturas de repetição (for / while)",
-                "Definição e uso de funções"
+                "Entrada e Saída de Dados (input / print)",
+                "Conversão de Tipos de Dados (int / float)",
+                "Operadores Aritméticos",
+                "Operador Resto da Divisão (%)",
+                "Operadores Relacionais e Lógicos (and, or, not)",
+                "Estruturas Condicionais (if, elif, else)",
+                "Estruturas de Repetição (while / for)",
+                "Validação de Entrada de Dados",
+                "Listas (append, not in, sort)",
+                "Dicionários (Chave-Valor)"
+              ],
+              anexo: null
+            },
+            qui: {
+              materia: "Português",
+              titulo: "Recuperação de Língua Portuguesa",
+              assunto: "Morfologia e Romantismo",
+              data: "2026-09-03",
+              conteudo: [
+                "Morfologia do português - estrutura da palavra",
+                "Romantismo brasileiro: poesia"
               ],
               anexo: null
             }
           }
         },
-        { faixa: "07–11", provas: {} },
-        { faixa: "14–18", provas: {} },
+        {
+          faixa: "07–11",
+          provas: {
+            sex: {
+              materia: "Filosofia",
+              titulo: "Trabalhos Ideologia - Apresentação",
+              assunto: "Apresentação de Cartaz",
+              data: "2026-09-11",
+              conteudo: [
+                "Confeccionar um cartaz sobre a ideologia que seu grupo recebeu, a explicando, em casos de ideologias erradas e as defendendo no caso das outras ideologias."
+              ],
+              anexo: null
+            }
+          }
+        },
+        {
+          faixa: "14–18",
+          provas: {
+            ter: {
+              materia: "MCC",
+              titulo: "Apresentação de Slides",
+              assunto: "Distribuições Linux",
+              data: "2026-09-15",
+              conteudo: [
+                "Trabalho em dupla ou trio",
+                "Escolher uma distribuição Linux",
+                "Nome e Logo",
+                "País e Ano",
+                "Baseado em qual distro",
+                "Objetivo",
+                "Gerenciador de pacote",
+                "Propriedade",
+                "Comunidade",
+                "Vantagem e desvantagem"
+              ],
+              anexo: null
+            },
+            sex: {
+              materia: "Filosofia",
+              titulo: "Trabalhos Ideologia - Apresentação",
+              assunto: "Apresentação de Cartaz",
+              data: "2026-09-18",
+              conteudo: [
+                "Confeccionar um cartaz sobre a ideologia que seu grupo recebeu, a explicando, em casos de ideologias erradas e as defendendo no caso das outras ideologias."
+              ],
+              anexo: null
+            }
+          }
+        },
         { faixa: "21–25", provas: {} },
         { faixa: "28–2",  provas: {} }
       ]
