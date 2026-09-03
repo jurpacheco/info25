@@ -117,6 +117,17 @@ const DADOS = {
         {
           faixa: "07–11",
           provas: {
+            seg: {
+              materia: "Banco de Dados",
+              titulo: "Prova de Assinalar",
+              assunto: "SQL - DML",
+              data: "2026-09-08",
+              conteudo: [
+                "Manipulando tabelas",
+                "Introdução à SQL-DML"
+              ],
+              anexo: "https://docs.google.com/presentation/d/1nUY_OoogtF04GG8qlAWY024HfcQoV32P/edit?pli=1&slide=id.p1#slide=id.p1"
+            },
             sex: {
               materia: "Filosofia",
               titulo: "Trabalhos Ideologia - Apresentação",
@@ -132,6 +143,19 @@ const DADOS = {
         {
           faixa: "14–18",
           provas: {
+            seg: {
+              materia: "Filosofia",
+              titulo: "Prova",
+              assunto: "Maquiavel, Contratualismo",
+              data: "2026-09-14",
+              conteudo: [
+                "Nicolau Maquiavel",
+                "Thomas Hobbes",
+                "John Locke",
+                "Jean-Jacques Rousseau"
+              ],
+              anexo: null
+            },
             ter: {
               materia: "MCC",
               titulo: "Apresentação de Slides",
@@ -152,7 +176,7 @@ const DADOS = {
               anexo: null
             },
             sex: {
-              materia: "Filosofia",
+              materia: "História",
               titulo: "Trabalhos Ideologia - Apresentação",
               assunto: "Apresentação de Cartaz",
               data: "2026-09-18",
@@ -184,4 +208,4 @@ const DADOS = {
       sex: ["Matemática", "Geografia", "PI", "Biologia"]
     }
   }
-};
+}; 
