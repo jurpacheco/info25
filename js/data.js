@@ -128,6 +128,25 @@ const DADOS = {
               ],
               anexo: "https://docs.google.com/presentation/d/1NufyxhGE6XRZG4R0G3ONJpQB1QzAbb8y0xexLUrO2Bw/edit?slide=id.p1#slide=id.p1"
             },
+              qua: {
+              materia: "PES",
+              titulo: "Recuperação da Prova",
+              assunto: "Módulo Básico de Python",
+              data: "2026-09-09",
+              conteudo: [
+                "Entrada e Saída de Dados (input / print)",
+                "Conversão de Tipos de Dados (int / float)",
+                "Operadores Aritméticos",
+                "Operador Resto da Divisão (%)",
+                "Operadores Relacionais e Lógicos (and, or, not)",
+                "Estruturas Condicionais (if, elif, else)",
+                "Estruturas de Repetição (while / for)",
+                "Validação de Entrada de Dados",
+                "Listas (append, not in, sort)",
+                "Dicionários (Chave-Valor)"
+              ],
+              anexo: null                        // ou: { nome: "Lista de exercícios", link: "anexos/lista1.pdf" }
+            },
             sex: {
               materia: "História",
               titulo: "Trabalhos Ideologia - Apresentação",
