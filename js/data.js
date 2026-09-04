@@ -117,19 +117,19 @@ const DADOS = {
         {
           faixa: "07–11",
           provas: {
-            seg: {
+            ter: {
               materia: "Banco de Dados",
               titulo: "Prova de Assinalar",
               assunto: "SQL - DML",
-              data: "2026-09-08",
+              data: "2026-09-09",
               conteudo: [
                 "Manipulando tabelas",
                 "Introdução à SQL-DML"
               ],
-              anexo: "https://docs.google.com/presentation/d/1nUY_OoogtF04GG8qlAWY024HfcQoV32P/edit?pli=1&slide=id.p1#slide=id.p1"
+              anexo: "https://docs.google.com/presentation/d/1NufyxhGE6XRZG4R0G3ONJpQB1QzAbb8y0xexLUrO2Bw/edit?slide=id.p1#slide=id.p1"
             },
             sex: {
-              materia: "Filosofia",
+              materia: "História",
               titulo: "Trabalhos Ideologia - Apresentação",
               assunto: "Apresentação de Cartaz",
               data: "2026-09-11",
