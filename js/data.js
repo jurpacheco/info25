@@ -1,11 +1,8 @@
-/* ============================================================
+/* =============================================================
    DADOS DO CALENDÁRIO — TURMA INFO 25 (IFSC)
-   ------------------------------------------------------------
-   Este é o ÚNICO arquivo que você precisa editar no dia a dia.
-   Não é preciso saber programar: basta seguir os exemplos abaixo,
-   copiando e colando blocos { } para criar novas semanas, provas
-   ou meses.
+   ============================================================= */
 
+<<<<<<< HEAD
    COMO FUNCIONA:
    - Cada MÊS tem uma lista de SEMANAS.
    - Cada SEMANA tem uma "faixa" (o texto do intervalo de dias,
@@ -40,6 +37,9 @@
    ============================================================ */
 
 const DADOS = {
+=======
+   const DADOS = {
+>>>>>>> 4c5073023a01c0a1cb82ada8331f6625eae25246
     turma: "Turma Info 25",
     instituicao: "IFSC — Câmpus Garopaba",
   
@@ -119,6 +119,7 @@ const DADOS = {
                 anexo: null
               },
               sex: {
+<<<<<<< HEAD
                 materia: "História/Biologia",
                 titulo: "Ideologias/Aula Prática",
                 assunto: "Apresentação de Cartaz/Tipos sanguíneos",
@@ -126,6 +127,14 @@ const DADOS = {
                 conteudo: [
                   "HISTÓRIA: Confeccionar um cartaz sobre a ideologia que seu grupo recebeu, a explicando, em casos de ideologias erradas e as defendendo no caso das outras ideologias.",
                   "BIOLOGIA: Testes de tipagem sanguínea, a ver com genética."
+=======
+                materia: "História",
+                titulo: "Trabalhos Ideologia - Apresentação",
+                assunto: "Apresentação de Cartaz",
+                data: "2026-09-11",
+                conteudo: [
+                  "Confeccionar um cartaz sobre a ideologia que seu grupo recebeu, a explicando, em casos de ideologias erradas e as defendendo no caso das outras ideologias."
+>>>>>>> 4c5073023a01c0a1cb82ada8331f6625eae25246
                 ],
                 anexo: null
               }
@@ -167,6 +176,7 @@ const DADOS = {
                 anexo: null
               },
               sex: {
+<<<<<<< HEAD
                 materia: "História / Matemática / Biologia",
                 titulo: "Apresentação de História / Prova de Matemática / Atividade de Biologia",
                 assunto: "Ideologia / Logaritmos / Genetica ",
@@ -175,6 +185,15 @@ const DADOS = {
                   "HISTÓRIA: Confeccionar um cartaz sobre a ideologia que seu grupo recebeu.",
                   "MATEMÁTICA: Definição de Logarítmo e Propriedades operatórias.",
                   "BIOLOGIA: Herença não mendaliana."
+=======
+                materia: "História / Matemática",
+                titulo: "Apresentação de História / Prova de Matemática",
+                assunto: "Ideologia / Logaritmos",
+                data: "2026-09-18",
+                conteudo: [
+                  "HISTÓRIA: Confeccionar um cartaz sobre a ideologia que seu grupo recebeu.",
+                  "MATEMÁTICA: Definição de Logarítmo e Propriedades operatórias."
+>>>>>>> 4c5073023a01c0a1cb82ada8331f6625eae25246
                 ],
                 anexo: null
               }
