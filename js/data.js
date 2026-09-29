@@ -205,14 +205,17 @@ const DADOS = {
               anexo: null
             },
             qui: {
-              materia: "Português",
-              titulo: "Atividade de Português",
-              assunto: "Iracema e Indianismo romantico",
-              data: "2026-10-08",
+              materia: "Português/EDF",
+              titulo: "Atividade de Português/Apresentação de EDF",
+              assunto: "Iracema e Indianismo romantico/Adaptação de Futebol",
+              data: "2026-10-01",
               conteudo: [
                 "Leitura de Iracema",
                 "Resposta das atividades",
-                "Análise do livro"
+                "Análise do livro",
+                "--------------------------",
+                "Apresentação de EDF",
+                "Adaptação de Futebol"
               ],
               anexo: null
             },
@@ -227,10 +230,23 @@ const DADOS = {
               assunto: "Logaritmos",
               data: "2026-10-09",
               conteudo: [
-                "Definição de Logarítmo e Propriedades operatórias."
+                "Matemática: Definição de Logarítmo e Propriedades operatórias.",
+        
               ],
               anexo: null
-            }
+            },
+            qui: {
+              materia: "História",
+              titulo: "Recuperação de História/Atividade de História",
+              assunto: "Revolução Francesa e Revolução do Haiti.",
+              data: "2026-10-08",
+              conteudo: [
+                "HISTÓRIA: Confeccionar um cartaz sobre a ideologia que seu grupo recebeu.",
+                "--------------------------------------------------------------------------",
+                "HISTÓRIA: Tarefa de história referente ao conselho dia 24/09 até 09/10."
+              ],
+              anexo: null
+            } 
           }
         },
         {
