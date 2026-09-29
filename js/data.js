@@ -191,10 +191,47 @@ const DADOS = {
                nome: "Prova de Biologia",
                link: "https://docs.google.com/document/d/1V_-De0TtlmD2HBE3C_EkxKmpW3z342GpVbvqHdmu5w8/edit?usp=sharing"
              }
-           }
+           },
+           qua: {
+             materia: "Filosofia",
+             titulo: "Recuperação de Filosofia (13:00, Na biblioteca)",
+             assunto: "Maquiavel, Contratualismo",
+             data: "2026-09-30",
+              conteudo: [
+                "Nicolau Maquiavel",
+                "Thomas Hobbes",
+                "John Locke",
+                "Jean-Jacques Rousseau",
+                "Recuperação oral!"
+              ],
+              anexo: null
          }
-       }
-     ]
+       },  
+     
+      faixa: "05-09",
+      provas: {
+        sex: {
+          materia: "Matemática",
+          titulo: "Recuperação de Matemática",
+          assunto: "Logaritmos",
+          data: "2026-10-09",
+          conteudo: [
+            "Definição de Logarítmo e Propriedades operatórias."
+          ],
+          anexo: null
+        }
+      }
+     },
+     { 
+      faixa: "12-16",
+     },
+     {
+      faixa: "19-23",
+     },
+      {
+        faixa: "26-30",
+      }
+    ]
    }
  ],
 
@@ -208,6 +245,7 @@ const DADOS = {
      qui: ["EDF", "História", "Português", "Artes"],
      sex: ["Matemática", "Geografia", "PI", "Biologia"]
    }
+  ]
  }
 };
 
