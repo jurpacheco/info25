@@ -203,12 +203,7 @@ const DADOS = {
                 "Recuperação oral!"
               ],
               anexo: null
-            }
-          }
-        },
-        {
-          faixa: "05-09",
-          provas: {
+            },
             qui: {
               materia: "Português",
               titulo: "Atividade de Português",
@@ -221,6 +216,11 @@ const DADOS = {
               ],
               anexo: null
             },
+          }
+        },
+        {
+          faixa: "05-09",
+          provas: {
             sex: {
               materia: "Matemática",
               titulo: "Recuperação de Matemática",
