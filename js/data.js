@@ -224,11 +224,11 @@ const DADOS = {
         {
           faixa: "05-09",
           provas: {
-            sex: {
+            ter: {
               materia: "Matemática",
               titulo: "Recuperação de Matemática",
               assunto: "Logaritmos",
-              data: "2026-10-09",
+              data: "2026-10-06",
               conteudo: [
                 "Matemática: Definição de Logarítmo e Propriedades operatórias.",
         
@@ -237,12 +237,10 @@ const DADOS = {
             },
             qui: {
               materia: "História",
-              titulo: "Recuperação de História/Atividade de História",
-              assunto: "Revolução Francesa e Revolução do Haiti.",
+              titulo: "Atividade de História",
+              assunto: "A Revolução Haitiana",
               data: "2026-10-08",
               conteudo: [
-                "HISTÓRIA: Confeccionar um cartaz sobre a ideologia que seu grupo recebeu.",
-                "--------------------------------------------------------------------------",
                 "HISTÓRIA: Tarefa de história referente ao conselho dia 24/09 até 09/10."
               ],
               anexo: null
